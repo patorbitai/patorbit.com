@@ -43,7 +43,7 @@ A     @    185.199.108.153
 A     @    185.199.109.153
 A     @    185.199.110.153
 A     @    185.199.111.153
-CNAME www  arvind-data-engineer.github.io
+CNAME www  patorbitai.github.io
 ```
 
 After DNS updates, set the custom domain to `patorbit.com` in GitHub Pages and enable HTTPS once GitHub finishes checking the domain.
