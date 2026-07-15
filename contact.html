@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Contact PAT Orbit for Power BI dashboards, Python automation, SQL reporting, and Azure data engineering projects.">
+<meta name="theme-color" content="#0f172a">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Contact PAT Orbit">
+<meta property="og:description" content="Send project details for Power BI dashboards, Python automation, SQL reporting, and Azure data engineering support.">
+<meta property="og:url" content="https://patorbit.com/contact.html">
+<meta property="og:site_name" content="PAT Orbit">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://patorbit.com/contact.html">
+<title>Contact PAT Orbit</title>
+<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<nav aria-label="Primary navigation">
+<a class="logo logo-lockup" href="index.html"><span>PAT Orbit</span><small>Platform for Agentic Technology</small></a>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="portfolio.html">Portfolio</a></li>
+<li><a href="data-analyzer.html">Analyzer</a></li>
+<li><a href="projects/index.html">Projects</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html" aria-current="page">Contact</a></li>
+<li><a href="blog.html">Blog</a></li>
+</ul>
+</nav>
+
+<main>
+
+<section class="page-header contact-header">
+<span class="section-kicker">Let's Connect</span>
+<h1>Start Your Data Project</h1>
+<p>Tell me what you want to improve: dashboards, reporting automation, SQL performance, or Azure data pipelines.</p>
+</section>
+
+<section class="contact-section" aria-labelledby="contact-title">
+<div class="contact-info">
+<span class="contact-tag">Contact Details</span>
+<h2 id="contact-title">Get In Touch</h2>
+<p>
+Share a little about your current data challenge and I will help you turn it into a practical next step.
+</p>
+
+<div class="contact-highlights" aria-label="Response details">
+<div>
+<strong>Typical reply</strong>
+<span>Within 24 hours</span>
+</div>
+<div>
+<strong>Best for</strong>
+<span>Dashboards, automation, ETL</span>
+</div>
+</div>
+
+<div class="contact-list">
+<a class="contact-card" href="mailto:data_with_arvind@gmail.com">
+<span class="contact-card-label">Email</span>
+<strong>data_with_arvind@gmail.com</strong>
+</a>
+
+<a class="contact-card" href="https://www.linkedin.com/in/data-with-arvind/" target="_blank" rel="noopener">
+<span class="contact-card-label">LinkedIn</span>
+<strong>Connect with PAT Orbit</strong>
+</a>
+
+<a class="contact-card" href="tel:+918861333476">
+<span class="contact-card-label">Phone</span>
+<strong>+91 88613 33476</strong>
+</a>
+</div>
+</div>
+
+<div class="contact-form-box">
+<h2>Send A Message</h2>
+<p class="form-intro">A few details help me understand the scope before we talk.</p>
+
+<form class="contact-form" data-api-url="http://localhost:8000/api/project-requests" data-mailto="data_with_arvind@gmail.com">
+<div class="form-grid">
+<div class="form-field">
+<label for="name">Your Name</label>
+<input id="name" name="name" type="text" placeholder="Your name" autocomplete="name" required>
+</div>
+
+<div class="form-field">
+<label for="email">Your Email</label>
+<input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+</div>
+</div>
+
+<div class="form-field">
+<label for="project-type">Project Type</label>
+<select id="project-type" name="project-type" required>
+<option value="">Select a project type</option>
+<option value="Power BI dashboard">Power BI dashboard</option>
+<option value="Python automation">Python automation</option>
+<option value="SQL reporting">SQL reporting</option>
+<option value="Azure data pipeline">Azure data pipeline</option>
+<option value="Other data project">Other data project</option>
+</select>
+</div>
+
+<div class="form-field">
+<label for="message">Project Details</label>
+<textarea id="message" name="message" rows="6" placeholder="What data problem should we solve?" required></textarea>
+</div>
+
+<div class="form-grid">
+<div class="form-field">
+<label for="timeline">Timeline</label>
+<input id="timeline" name="timeline" type="text" placeholder="Example: 2 weeks, this month">
+</div>
+
+<div class="form-field">
+<label for="budget">Budget Range</label>
+<input id="budget" name="budget" type="text" placeholder="Optional">
+</div>
+</div>
+
+<button type="submit">Send Message</button>
+<div class="submission-status" id="submission-status" hidden></div>
+</form>
+</div>
+</section>
+
+<section class="section section-alt submissions-section" aria-labelledby="submissions-title">
+<span class="section-kicker">Message Delivery</span>
+<h2 id="submissions-title">Requests Save To Database</h2>
+<p class="form-intro">The contact form sends each enquiry to the backend API so it can be stored in SQL Server.</p>
+<div class="grid">
+<article class="card deliverable-card">
+<h3>SQL Server Storage</h3>
+<p>Each project request is saved with the visitor's name, email, project type, timeline, budget, and message.</p>
+</article>
+
+<article class="card deliverable-card">
+<h3>API Connected</h3>
+<p>The website posts to the FastAPI backend endpoint at <strong>/api/project-requests</strong>.</p>
+</article>
+
+<article class="card deliverable-card">
+<h3>Customer Records</h3>
+<p>New enquiries create database records that can later power an admin dashboard or CRM workflow.</p>
+</article>
+</div>
+</section>
+
+<section class="section contact-support" aria-labelledby="support-title">
+<span class="section-kicker">Before We Start</span>
+<h2 id="support-title">Helpful Details To Share</h2>
+
+<div class="grid">
+<article class="card deliverable-card">
+<h3>Current Process</h3>
+<p>What reports, spreadsheets, databases, or manual steps are involved today?</p>
+</article>
+
+<article class="card deliverable-card">
+<h3>Desired Output</h3>
+<p>What should the final dashboard, report, script, or pipeline help you decide or do?</p>
+</article>
+
+<article class="card deliverable-card">
+<h3>Data Sources</h3>
+<p>Where does the data live: Excel, SQL, APIs, cloud storage, business apps, or mixed sources?</p>
+</article>
+</div>
+</section>
+
+<section class="section cta-section" aria-labelledby="contact-cta-title">
+<div class="cta-panel">
+<h2 id="contact-cta-title">Prefer A Quick Chat?</h2>
+<p>Use WhatsApp for a faster conversation about your dashboard, automation, or data engineering requirement.</p>
+<a href="https://wa.me/918861333476" class="btn-primary">Chat On WhatsApp</a>
+</div>
+</section>
+
+</main>
+
+<footer class="footer">
+<div class="footer-shell footer-simple">
+<div class="footer-main">
+<div class="footer-brand-block">
+<a class="footer-brand" href="index.html">PAT Orbit</a>
+<p class="footer-copy">Platform for Agentic Technology, building AI agents, intelligent automation tools, and AI-powered software products.</p>
+<div class="footer-badges" aria-label="Core specialties">
+<span>AI Agents</span>
+<span>Automation</span>
+<span>Software</span>
+<span>Products</span>
+</div>
+</div>
+
+<div class="footer-contact-panel">
+<div>
+<span class="footer-eyebrow">Project inquiries</span>
+<strong>Ready to discuss your data workflow?</strong>
+</div>
+<div class="footer-contact-list">
+<a href="mailto:data_with_arvind@gmail.com"><img src="images/icon-email.svg" alt="" aria-hidden="true"><span>Email</span><strong>data_with_arvind@gmail.com</strong></a>
+<a href="https://wa.me/918861333476"><img src="images/icon-whatsapp.svg" alt="" aria-hidden="true"><span>WhatsApp</span><strong>+91 88613 33476</strong></a>
+</div>
+<a class="footer-cta" href="contact.html">Send Project Details</a>
+</div>
+</div>
+
+<div class="footer-bottom">
+<p>&copy; 2026 PAT Orbit. PAT Orbit is a technology brand operated by Tulsi Enterprises.</p>
+<div class="footer-social" aria-label="Social links">
+<a href="https://www.linkedin.com/in/data-with-arvind/" target="_blank" rel="noopener"><img src="images/icon-linkedin.svg" alt="" aria-hidden="true">LinkedIn</a>
+<a href="https://github.com/data-with-arvind" target="_blank" rel="noopener"><img src="images/icon-github.svg" alt="" aria-hidden="true">GitHub</a>
+<a href="mailto:data_with_arvind@gmail.com"><img src="images/icon-email.svg" alt="" aria-hidden="true">Email</a>
+</div>
+</div>
+</div>
+</footer>
+
+<a href="https://wa.me/918861333476" class="whatsapp-btn" aria-label="Chat on WhatsApp"><img src="images/icon-whatsapp.svg" alt="" aria-hidden="true"><span>WhatsApp</span></a>
+
+<script>
+const contactForm = document.querySelector('.contact-form');
+const submissionStatus = document.getElementById('submission-status');
+
+if (contactForm && submissionStatus) {
+  const buildMailtoUrl = (payload) => {
+    const subject = `Project enquiry from ${payload.name}`;
+    const body = [
+      `Name: ${payload.name}`,
+      `Email: ${payload.email}`,
+      `Project type: ${payload.project_type}`,
+      `Timeline: ${payload.timeline || 'Not provided'}`,
+      `Budget: ${payload.budget || 'Not provided'}`,
+      '',
+      payload.message
+    ].join('\n');
+
+    return `mailto:${contactForm.dataset.mailto}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  };
+
+  const isLocalApiAvailable = () => {
+    const apiUrl = contactForm.dataset.apiUrl || '';
+    const isLocalPage = ['localhost', '127.0.0.1'].includes(window.location.hostname);
+    return !apiUrl.includes('localhost') || isLocalPage;
+  };
+
+  contactForm.addEventListener('submit', async (event) => {
+    event.preventDefault();
+
+    const submitButton = contactForm.querySelector('button[type="submit"]');
+    const formData = new FormData(contactForm);
+    const payload = {
+      name: formData.get('name'),
+      email: formData.get('email'),
+      project_type: formData.get('project-type'),
+      message: formData.get('message'),
+      timeline: formData.get('timeline') || null,
+      budget: formData.get('budget') || null
+    };
+
+    submissionStatus.hidden = false;
+    submissionStatus.className = 'submission-status status-info';
+    submissionStatus.textContent = 'Sending your enquiry...';
+    submitButton.disabled = true;
+
+    try {
+      if (!isLocalApiAvailable()) {
+        window.location.href = buildMailtoUrl(payload);
+        submissionStatus.className = 'submission-status status-info';
+        submissionStatus.textContent = 'Opening your email app so you can send the enquiry directly.';
+        return;
+      }
+
+      const response = await fetch(contactForm.dataset.apiUrl, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+
+      if (!response.ok) {
+        throw new Error('Request failed');
+      }
+
+      contactForm.reset();
+      submissionStatus.className = 'submission-status status-success';
+      submissionStatus.textContent = 'Thanks. Your enquiry has been saved and I will reply soon.';
+    } catch (error) {
+      submissionStatus.className = 'submission-status status-error';
+      submissionStatus.innerHTML = 'Could not save the enquiry right now. Please email <a href="mailto:data_with_arvind@gmail.com">data_with_arvind@gmail.com</a> or try again later.';
+    } finally {
+      submitButton.disabled = false;
+    }
+  });
+}
+</script>
+</body>
+</html>

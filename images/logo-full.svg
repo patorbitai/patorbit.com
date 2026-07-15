@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 96" role="img" aria-labelledby="title desc">
+  <title id="title">PAT Orbit</title>
+  <desc id="desc">Horizontal website logo for PAT Orbit.</desc>
+  <defs>
+    <linearGradient id="logo-bg" x1="12" y1="10" x2="88" y2="88" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#082f49"/>
+      <stop offset=".48" stop-color="#0f172a"/>
+      <stop offset="1" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="logo-accent" x1="24" y1="70" x2="78" y2="20" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset=".52" stop-color="#60a5fa"/>
+      <stop offset="1" stop-color="#a7f3d0"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="2" y="2" width="92" height="92" rx="22" fill="url(#logo-bg)"/>
+  <path d="M20 76V20h27c18 0 32 12 32 28s-14 28-32 28H20Z" fill="none" stroke="#1e293b" stroke-width="10"/>
+  <path d="M30 66V30h16c12 0 22 8 22 18s-10 18-22 18H30Z" fill="none" stroke="url(#logo-accent)" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M47 70 62 32l16 38" fill="none" stroke="#e2e8f0" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M55 56h15" stroke="#e2e8f0" stroke-width="6" stroke-linecap="round"/>
+  <path d="M28 58 41 48l10 7 21-25" fill="none" stroke="#22d3ee" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="28" cy="58" r="4" fill="#22d3ee"/>
+  <circle cx="41" cy="48" r="4" fill="#60a5fa"/>
+  <circle cx="51" cy="55" r="4" fill="#60a5fa"/>
+  <circle cx="72" cy="30" r="4" fill="#a7f3d0"/>
+
+  <text x="116" y="46" fill="#e2e8f0" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="800">PAT Orbit</text>
+  <text x="118" y="70" fill="#7dd3fc" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="2">DASHBOARDS  PIPELINES  AUTOMATION</text>
+</svg>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Demo page for the retail sales ETL sample project, including sample data and Python transformation code.">
+<title>Retail ETL Sample Project | PAT Orbit</title>
+<link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+<nav aria-label="Primary navigation">
+<a class="logo logo-lockup" href="../index.html"><span>PAT Orbit</span><small>Platform for Agentic Technology</small></a>
+
+<ul>
+<li><a href="../index.html">Home</a></li>
+<li><a href="../services.html">Services</a></li>
+<li><a href="../portfolio.html">Portfolio</a></li>
+<li><a href="../data-analyzer.html">Analyzer</a></li>
+<li><a href="index.html">Projects</a></li>
+<li><a href="../about.html">About</a></li>
+<li><a href="../contact.html">Contact</a></li>
+<li><a href="../blog.html">Blog</a></li>
+</ul>
+</nav>
+
+<main>
+<section class="page-header portfolio-header">
+<span class="section-kicker">Sample Project</span>
+<h1>Retail ETL Sample Project</h1>
+<p>Practical sample assets for the retail sales data engineering case study: source files, ETL script, and output datasets.</p>
+</section>
+<section class="section project-nav" aria-label="Project navigation">
+<ul>
+<li><a href="../projects/sales-dashboard.html">Sales Performance Dashboard</a></li>
+<li><a href="../projects/hr-dashboard.html">HR Analytics Dashboard</a></li>
+<li><a href="../projects/python-automation.html">Python Reporting Automation</a></li>
+<li><a href="../projects/data-engineering-case-study.html">Retail Data Engineering Pipeline</a></li>
+</ul>
+<a href="../portfolio.html" class="btn-secondary">Back to Portfolio</a>
+</section>
+
+<section class="section" aria-labelledby="detail-title">
+<span class="section-kicker">Project Folder</span>
+<h2 id="detail-title">What you will see in the sample project</h2>
+<ul>
+<li><strong>sample_data/sales.csv</strong> - raw sales transactions with order, product, and pricing details</li>
+<li><strong>sample_data/products.csv</strong> - product master data and category mappings</li>
+<li><strong>ingest_and_transform.py</strong> - Python ETL script for ingestion, validation, transformation, and output generation</li>
+<li><strong>output/</strong> - target folder for cleaned `fact_sales.csv` and `sales_summary_by_category.csv`</li>
+</ul>
+</section>
+
+<section class="section section-alt" aria-labelledby="run-title">
+<span class="section-kicker">How to run</span>
+<h2 id="run-title">Execute the sample ETL workflow</h2>
+<p>Run the script from the sample folder to generate the cleaned outputs.</p>
+<pre class="code-block">cd projects/data-engineering-sample
+python ingest_and_transform.py</pre>
+<p>The script writes two files into `projects/data-engineering-sample/output/`:</p>
+<ul>
+<li><strong>fact_sales.csv</strong> - cleaned and enriched sales fact data</li>
+<li><strong>sales_summary_by_category.csv</strong> - aggregated revenue summary by category</li>
+</ul>
+</section>
+
+<section class="section split-section" aria-labelledby="benefits-title">
+<div>
+<span class="section-kicker">Why it matters</span>
+<h2 id="benefits-title">Interview-ready engineering details</h2>
+<p>This demo makes it easy to show not only what the project solves, but how it is implemented. It also gives you a concrete artifact to reference in conversation.</p>
+</div>
+<div class="card highlight-card">
+<h3>Key talking points</h3>
+<ul>
+<li>Data ingestion strategy for raw retail CSVs</li>
+<li>Validation rules and quality control</li>
+<li>Transformation logic that creates analytics-ready data</li>
+<li>How to link the output to reporting dashboards</li>
+</ul>
+</div>
+</section>
+
+<section class="section cta-section" aria-labelledby="connect-title">
+<div class="cta-panel">
+<h2 id="connect-title">Want more sample artifacts?</h2>
+<p>I can also add SQL model examples, a Data Factory orchestration diagram, and a dashboard mockup for this case study.</p>
+<a href="../contact.html" class="btn-primary">Talk About Your Project</a>
+</div>
+</section>
+</main>
+
+<footer class="footer">
+<div class="footer-shell footer-simple">
+<div class="footer-main">
+<div class="footer-brand-block">
+<a class="footer-brand" href="../index.html">PAT Orbit</a>
+<p class="footer-copy">Platform for Agentic Technology, building AI agents, intelligent automation tools, and AI-powered software products.</p>
+<div class="footer-badges" aria-label="Core specialties">
+<span>AI Agents</span>
+<span>Automation</span>
+<span>Software</span>
+<span>Products</span>
+</div>
+</div>
+
+<div class="footer-contact-panel">
+<div>
+<span class="footer-eyebrow">Project inquiries</span>
+<strong>Ready to discuss your data workflow?</strong>
+</div>
+<div class="footer-contact-list">
+<a href="mailto:data_with_arvind@gmail.com"><img src="../images/icon-email.svg" alt="" aria-hidden="true"><span>Email</span><strong>data_with_arvind@gmail.com</strong></a>
+<a href="https://wa.me/918861333476"><img src="../images/icon-whatsapp.svg" alt="" aria-hidden="true"><span>WhatsApp</span><strong>+91 88613 33476</strong></a>
+</div>
+<a class="footer-cta" href="../contact.html">Send Project Details</a>
+</div>
+</div>
+
+<div class="footer-bottom">
+<p>&copy; 2026 PAT Orbit. PAT Orbit is a technology brand operated by Tulsi Enterprises.</p>
+<div class="footer-social" aria-label="Social links">
+<a href="https://www.linkedin.com/in/data-with-arvind/" target="_blank" rel="noopener"><img src="../images/icon-linkedin.svg" alt="" aria-hidden="true">LinkedIn</a>
+<a href="https://github.com/data-with-arvind" target="_blank" rel="noopener"><img src="../images/icon-github.svg" alt="" aria-hidden="true">GitHub</a>
+<a href="mailto:data_with_arvind@gmail.com"><img src="../images/icon-email.svg" alt="" aria-hidden="true">Email</a>
+</div>
+</div>
+</div>
+</footer>
+
+<a href="https://wa.me/918861333476" class="whatsapp-btn" aria-label="Chat on WhatsApp"><img src="../images/icon-whatsapp.svg" alt="" aria-hidden="true"><span>WhatsApp</span></a>
+
+</body>
+</html>

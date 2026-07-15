@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Upload CSV, JSON, and Excel datasets to preview cleaning, relationship analysis, KPIs, charts, and decision-ready data insights.">
+<meta name="theme-color" content="#0f172a">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Data Analyzer | Upload CSV, Excel & JSON Files">
+<meta property="og:description" content="Preview dataset cleaning, KPIs, charts, relationships, and decision-ready insights directly in the browser.">
+<meta property="og:url" content="https://patorbit.com/data-analyzer.html">
+<meta property="og:site_name" content="PAT Orbit">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://patorbit.com/data-analyzer.html">
+<title>Data Analyzer | Upload CSV, Excel & JSON Files</title>
+<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<nav aria-label="Primary navigation">
+<a class="logo logo-lockup" href="index.html"><span>PAT Orbit</span><small>Platform for Agentic Technology</small></a>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="portfolio.html">Portfolio</a></li>
+<li><a href="data-analyzer.html" aria-current="page">Analyzer</a></li>
+<li><a href="projects/index.html">Projects</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="blog.html">Blog</a></li>
+</ul>
+</nav>
+
+<main>
+
+<section class="page-header analyzer-header">
+<span class="section-kicker">Dataset Analysis Tool</span>
+<h1>Analyze Your Dataset Before Building A Dashboard</h1>
+<p>
+Upload CSV, JSON, or Excel files to check quality, profile columns, detect relationships, generate charts, and export a quick analysis summary.
+</p>
+<div class="page-header-actions">
+<a href="#live-demo-title" class="btn-primary">Analyze A Dataset</a>
+<a href="contact.html" class="btn-secondary">Need Full Dashboard?</a>
+</div>
+</section>
+
+<section class="section analyzer-value-section" aria-label="Analyzer capabilities">
+<div class="analyzer-value-grid">
+<article>
+<span>01</span>
+<strong>Upload messy files</strong>
+<p>Drop CSV, Excel, TSV, or JSON data and preview the cleaned structure directly in the browser.</p>
+</article>
+<article>
+<span>02</span>
+<strong>Find useful fields</strong>
+<p>The analyzer profiles numeric, date, and category columns so you know what can become a chart or KPI.</p>
+</article>
+<article>
+<span>03</span>
+<strong>Get dashboard direction</strong>
+<p>See quality scores, top segments, trend signals, relationship hints, and next-action recommendations.</p>
+</article>
+</div>
+</section>
+
+<section class="section live-demo-section analyzer-workspace" aria-labelledby="live-demo-title">
+<div class="analysis-loading-overlay" id="analysis-loading-overlay" hidden>
+<div>
+<span class="analysis-spinner" aria-hidden="true"></span>
+<strong id="analysis-loading-title">Reading data</strong>
+<small id="analysis-loading-detail">Preparing your preview. Large files are limited for browser performance.</small>
+</div>
+</div>
+<div class="analyzer-command-bar">
+<div>
+<span class="section-kicker">Free Browser Preview</span>
+<h2 id="live-demo-title">Clean, Profile, Visualize, And Summarize</h2>
+<p class="analyzer-command-copy">Use the sample data first, then upload your own file to see automatic KPIs, charts, quality checks, and a downloadable analysis report.</p>
+</div>
+<div class="dataset-actions">
+<label class="csv-upload-control" for="csv-upload">Choose Data Files</label>
+<input id="csv-upload" type="file" accept=".csv,.tsv,.json,.xlsx,.xls,text/csv,application/json,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.ms-excel" multiple>
+<button type="button" class="btn-secondary live-demo-button" id="run-live-demo">Analyze Sample</button>
+<button type="button" class="btn-secondary live-demo-button" id="download-analysis-report">Download Report</button>
+</div>
+</div>
+
+<div class="analyzer-dropzone" id="analyzer-dropzone">
+<div>
+<span class="dropzone-icon" aria-hidden="true"></span>
+<strong>Drop files here or choose data files</strong>
+<small>CSV, TSV, JSON, XLSX, and XLS supported. Large files are sampled in the browser for speed.</small>
+</div>
+<div class="dropzone-formats" aria-label="Supported formats">
+<span>CSV</span>
+<span>Excel</span>
+<span>JSON</span>
+<span>Multi-file</span>
+</div>
+</div>
+
+<div class="analyzer-feature-grid" aria-label="Analyzer outputs">
+<article>
+<span>Quality Score</span>
+<strong>Completeness, duplicates, blanks</strong>
+</article>
+<article>
+<span>Column Profile</span>
+<strong>Numeric, date, and category fields</strong>
+</article>
+<article>
+<span>Auto Charts</span>
+<strong>KPIs, trend, segment share</strong>
+</article>
+<article>
+<span>Decision Brief</span>
+<strong>Opportunity, risk, next action</strong>
+</article>
+</div>
+
+<div class="dataset-workflow" aria-label="Dataset workflow stages">
+<button type="button" class="workflow-step is-active" data-stage-button="upload"><span>01</span><strong>Upload</strong><small>CSV, JSON, Excel</small></button>
+<button type="button" class="workflow-step" data-stage-button="clean"><span>02</span><strong>Clean</strong><small>Headers, rows, values</small></button>
+<button type="button" class="workflow-step" data-stage-button="relationship"><span>03</span><strong>Relationships</strong><small>Keys and quality</small></button>
+<button type="button" class="workflow-step" data-stage-button="chart"><span>04</span><strong>Charts</strong><small>KPIs and visuals</small></button>
+</div>
+
+<div class="analysis-overview-grid data-stage-panel" data-stage-panel="upload" aria-label="Analysis preview summary">
+<article class="analysis-overview-card">
+<span>Files Checked</span>
+<strong id="analysis-files">--</strong>
+<small>Upload status and source count</small>
+</article>
+<article class="analysis-overview-card">
+<span>Dataset Shape</span>
+<strong id="analysis-shape">--</strong>
+<small>Rows and columns detected</small>
+</article>
+<article class="analysis-overview-card">
+<span>Chart Readiness</span>
+<strong id="analysis-chart-ready">--</strong>
+<small>Needs category and numeric fields</small>
+</article>
+</div>
+
+<div class="analyzer-shell">
+<div class="live-demo-panel card data-stage-panel" data-stage-panel="clean" hidden>
+<div class="live-demo-topline">
+<div>
+<span>Dataset Preview Engine</span>
+<strong id="live-demo-status">Preview Ready</strong>
+</div>
+</div>
+
+<div class="dataset-tables">
+<div class="preview-table-card raw-preview-card">
+<h3>Raw Preview</h3>
+<div class="table-scroll">
+<table class="demo-table">
+<thead>
+<tr id="raw-data-head"></tr>
+</thead>
+<tbody id="raw-data-table"></tbody>
+</table>
+</div>
+</div>
+
+<div class="preview-table-card cleaned-preview-card">
+<h3>Cleaned Preview</h3>
+<div class="table-scroll">
+<table class="demo-table">
+<thead>
+<tr id="clean-data-head"></tr>
+</thead>
+<tbody id="clean-data-table"></tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div class="column-identity-panel">
+<div class="column-identity-heading">
+<span>Column Profile</span>
+<strong id="column-identity-summary">Run analysis to profile each column.</strong>
+</div>
+<div class="column-identity-list" id="column-identity-list">
+<div class="column-identity-empty">Column stats will appear after upload.</div>
+</div>
+</div>
+
+<div class="ai-insight-panel">
+<div class="ai-insight-heading">
+<span>Static Analysis Output</span>
+<strong id="ai-quality-score">Quality score: --</strong>
+</div>
+<ul id="ai-insights">
+<li>Upload one or more CSV, JSON, or Excel files to generate a browser-side cleaning, relationship, KPI, and dashboard preview.</li>
+</ul>
+</div>
+
+<div class="decision-brief-panel">
+<div class="decision-brief-heading">
+<span>Decision Brief</span>
+<strong id="decision-readiness">Readiness: --</strong>
+</div>
+<div class="decision-grid">
+<div>
+<span>Opportunity</span>
+<strong id="decision-opportunity">Upload data to identify the strongest segment.</strong>
+</div>
+<div>
+<span>Risk</span>
+<strong id="decision-risk">Quality risks will appear after analysis.</strong>
+</div>
+<div>
+<span>Next Action</span>
+<strong id="decision-action">Run analysis to get recommended action.</strong>
+</div>
+</div>
+<div class="decision-detail-grid">
+<div>
+<span>Top Driver</span>
+<strong id="decision-top-driver">--</strong>
+</div>
+<div>
+<span>Weak Area</span>
+<strong id="decision-weak-area">--</strong>
+</div>
+<div>
+<span>Trend Signal</span>
+<strong id="decision-trend-signal">--</strong>
+</div>
+<div>
+<span>Decision Note</span>
+<strong id="decision-note">--</strong>
+</div>
+</div>
+</div>
+
+</div>
+
+<aside class="live-demo-metrics data-stage-panel" data-stage-panel="relationship" hidden aria-label="Dataset analysis metrics">
+<article class="card live-metric-card">
+<span>Clean Rows</span>
+<strong id="live-revenue">0/0</strong>
+<small>Blank headers, duplicates, and empty values handled</small>
+</article>
+
+<article class="card live-metric-card">
+<span>Columns Detected</span>
+<strong id="live-forecast">0</strong>
+<small>Numeric, date, and category fields inferred</small>
+</article>
+
+<article class="card live-metric-card">
+<span>Top Relationship</span>
+<strong id="live-anomaly">-</strong>
+<small>Strongest pattern found inside the dataset</small>
+</article>
+
+<article class="card dataset-relationship-card">
+<span>Dataset Relationships</span>
+<strong id="dataset-relationship-count">--</strong>
+<small id="dataset-relationship-summary">Upload multiple data files to detect shared keys and value overlap.</small>
+</article>
+</aside>
+</div>
+
+<section class="analyzer-dashboard-grid data-stage-panel" data-stage-panel="chart" hidden aria-label="Generated analysis dashboard">
+<article class="card dashboard-card-mini">
+<div class="chart-card-heading">
+<div>
+<span>Auto Chart</span>
+<strong id="dashboard-chart-title">Top categories by selected value</strong>
+</div>
+<small id="dashboard-chart-summary">Run analysis to generate a visual summary.</small>
+</div>
+<div class="chart-stat-row" aria-label="Auto chart summary">
+<div>
+<span>Top Segment</span>
+<strong id="chart-top-segment">--</strong>
+</div>
+<div>
+<span>Visible Total</span>
+<strong id="chart-visible-total">--</strong>
+</div>
+</div>
+<canvas id="dataset-dashboard-chart" width="620" height="300" aria-label="Auto-generated dataset dashboard chart"></canvas>
+<div class="dashboard-bars" id="dataset-dashboard-bars" aria-label="Auto-generated dashboard bars"></div>
+</article>
+
+<article class="card compare-chart-card">
+<div class="chart-card-heading">
+<div>
+<span>Compare View</span>
+<strong id="compare-chart-title">Trend and segment analysis</strong>
+</div>
+<small id="compare-chart-summary">Upload data with date, category, and numeric fields to compare performance.</small>
+</div>
+<div class="compare-control-grid" aria-label="Comparison chart controls">
+<label>
+<span>Year</span>
+<select id="compare-year-select"></select>
+</label>
+<label>
+<span>Measure</span>
+<select id="compare-measure-select"></select>
+</label>
+<label>
+<span>Segment</span>
+<select id="compare-category-select"></select>
+</label>
+</div>
+<div class="compare-chart-grid">
+<div>
+<canvas id="year-comparison-chart" width="520" height="250" aria-label="Period trend chart"></canvas>
+<small id="year-comparison-summary">Period trend appears after analysis.</small>
+</div>
+<div>
+<canvas id="segment-comparison-chart" width="520" height="250" aria-label="Segment comparison chart"></canvas>
+<small id="segment-comparison-summary">Segment comparison appears after analysis.</small>
+</div>
+</div>
+<div class="compare-insight-grid">
+<div>
+<span>Best Period</span>
+<strong id="compare-best-period">--</strong>
+</div>
+<div>
+<span>Weak Period</span>
+<strong id="compare-weak-period">--</strong>
+</div>
+<div>
+<span>Movement</span>
+<strong id="compare-growth-rate">--</strong>
+</div>
+<div>
+<span>Focus</span>
+<strong id="compare-focus-note">--</strong>
+</div>
+</div>
+</article>
+
+<article class="card mini-chart-card">
+<span>Segment Share</span>
+<canvas id="segment-share-chart" width="260" height="190" aria-label="Segment share donut chart"></canvas>
+<small id="segment-share-summary">Top segment share appears after analysis.</small>
+</article>
+
+<article class="card mini-chart-card">
+<span>Data Quality</span>
+<canvas id="quality-gauge-chart" width="260" height="190" aria-label="Data quality gauge chart"></canvas>
+<small id="quality-gauge-summary">Quality score appears after analysis.</small>
+</article>
+
+<article class="card mini-chart-card">
+<span>Monthly Trend</span>
+<canvas id="monthly-trend-chart" width="260" height="190" aria-label="Monthly trend line chart"></canvas>
+<small id="monthly-trend-summary">Trend appears when date and numeric fields exist.</small>
+</article>
+
+<article class="card chart-kpi-card">
+<span>Total Value</span>
+<strong id="chart-kpi-total">--</strong>
+<small>Sum of visible chart segments</small>
+</article>
+
+<article class="card chart-kpi-card">
+<span>Average Segment</span>
+<strong id="chart-kpi-average">--</strong>
+<small>Average value per displayed segment</small>
+</article>
+
+<article class="card chart-kpi-card">
+<span>Best Segment Share</span>
+<strong id="chart-kpi-share">--</strong>
+<small>Top segment contribution</small>
+</article>
+
+<article class="card model-output-card">
+<span>Trend Preview</span>
+<strong id="model-forecast">Not enough data yet</strong>
+<small id="model-anomalies">Outliers: --</small>
+<small id="model-confidence">Reliability: --</small>
+</article>
+
+<article class="card quality-audit-card">
+<span>Quality Audit</span>
+<div class="quality-row">
+<small>Completeness</small>
+<strong id="quality-completeness">--</strong>
+</div>
+<div class="quality-row">
+<small>Duplicates</small>
+<strong id="quality-duplicates">--</strong>
+</div>
+<div class="quality-row">
+<small>Analysis Ready</small>
+<strong id="quality-model-ready">--</strong>
+</div>
+</article>
+
+<article class="card pbi-kpi-card">
+<span>Power BI Style KPI</span>
+<div class="quality-row">
+<small>Latest Month</small>
+<strong id="pbi-latest-month">--</strong>
+</div>
+<div class="quality-row">
+<small>Monthly KPI</small>
+<strong id="pbi-monthly-kpi">--</strong>
+</div>
+<div class="quality-row">
+<small>MoM Change</small>
+<strong id="pbi-mom-change">--</strong>
+</div>
+<div class="quality-row">
+<small>Avg Monthly</small>
+<strong id="pbi-average-monthly">--</strong>
+</div>
+</article>
+
+<article class="card paid-analysis-card analyzer-paid-card">
+<span>Need Deeper Analysis?</span>
+<strong>Paid Forecasting Version</strong>
+<small>Includes forecast models, year/month trend pages, seasonality review, scenario planning, confidence ranges, Power BI dashboards, and analyst recommendations.</small>
+<a href="contact.html" class="text-link">Request paid forecasting</a>
+</article>
+</section>
+</section>
+
+</main>
+
+<footer class="footer">
+<div class="footer-shell footer-simple">
+<div class="footer-main">
+<div class="footer-brand-block">
+<a class="footer-brand" href="index.html">PAT Orbit</a>
+<p class="footer-copy">Platform for Agentic Technology, building AI agents, intelligent automation tools, and AI-powered software products.</p>
+<div class="footer-badges" aria-label="Core specialties">
+<span>AI Agents</span>
+<span>Automation</span>
+<span>Software</span>
+<span>Products</span>
+</div>
+</div>
+
+<div class="footer-contact-panel">
+<div>
+<span class="footer-eyebrow">Project inquiries</span>
+<strong>Ready to discuss your data workflow?</strong>
+</div>
+<div class="footer-contact-list">
+<a href="mailto:data_with_arvind@gmail.com"><img src="images/icon-email.svg" alt="" aria-hidden="true"><span>Email</span><strong>data_with_arvind@gmail.com</strong></a>
+<a href="https://wa.me/918861333476"><img src="images/icon-whatsapp.svg" alt="" aria-hidden="true"><span>WhatsApp</span><strong>+91 88613 33476</strong></a>
+</div>
+<a class="footer-cta" href="contact.html">Send Project Details</a>
+</div>
+</div>
+
+<div class="footer-bottom">
+<p>&copy; 2026 PAT Orbit. PAT Orbit is a technology brand operated by Tulsi Enterprises.</p>
+<div class="footer-social" aria-label="Social links">
+<a href="https://www.linkedin.com/in/data-with-arvind/" target="_blank" rel="noopener"><img src="images/icon-linkedin.svg" alt="" aria-hidden="true">LinkedIn</a>
+<a href="https://github.com/data-with-arvind" target="_blank" rel="noopener"><img src="images/icon-github.svg" alt="" aria-hidden="true">GitHub</a>
+<a href="mailto:data_with_arvind@gmail.com"><img src="images/icon-email.svg" alt="" aria-hidden="true">Email</a>
+</div>
+</div>
+</div>
+</footer>
+
+<a class="whatsapp-float" href="https://wa.me/918861333476" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><img src="images/icon-whatsapp.svg" alt="" aria-hidden="true"><span>WhatsApp</span></a>
+
+<script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js" defer></script>
+<script src="js/live-analytics.js?v=20260618-trend-analysis" defer></script>
+</body>
+</html>

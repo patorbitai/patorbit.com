@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-labelledby="title">
+  <title id="title">PAT Orbit</title>
+  <defs>
+    <linearGradient id="bg" x1="12" y1="10" x2="88" y2="88" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#082f49"/>
+      <stop offset=".5" stop-color="#0f172a"/>
+      <stop offset="1" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="24" y1="70" x2="78" y2="20" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset=".55" stop-color="#60a5fa"/>
+      <stop offset="1" stop-color="#a7f3d0"/>
+    </linearGradient>
+  </defs>
+  <rect width="96" height="96" rx="22" fill="url(#bg)"/>
+  <path d="M28 66V30h16c12 0 22 8 22 18s-10 18-22 18H28Z" fill="none" stroke="url(#accent)" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M45 70 60 32l16 38" fill="none" stroke="#e2e8f0" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M53 56h15" stroke="#e2e8f0" stroke-width="6" stroke-linecap="round"/>
+  <path d="M26 58 39 48l10 7 21-25" fill="none" stroke="#22d3ee" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="26" cy="58" r="4" fill="#22d3ee"/>
+  <circle cx="39" cy="48" r="4" fill="#60a5fa"/>
+  <circle cx="49" cy="55" r="4" fill="#60a5fa"/>
+  <circle cx="70" cy="30" r="4" fill="#a7f3d0"/>
+</svg>
