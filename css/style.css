@@ -67,10 +67,10 @@ nav{
 
 .logo:before{
     content:"";
-    width:34px;
-    height:34px;
+    width:42px;
+    height:42px;
     flex:0 0 auto;
-    background:url("../images/logo-mark.svg") center/contain no-repeat;
+    background:url("../images/pat-orbit-mark.png") center/contain no-repeat;
 }
 
 nav ul{
@@ -1999,10 +1999,10 @@ nav a[aria-current="page"]{
 
 .footer-brand:before{
     content:"";
-    width:42px;
-    height:42px;
+    width:48px;
+    height:48px;
     flex:0 0 auto;
-    background:url("../images/logo-mark.svg") center/contain no-repeat;
+    background:url("../images/pat-orbit-mark.png") center/contain no-repeat;
 }
 
 .footer-copy{
@@ -4491,8 +4491,8 @@ video{
     }
 
     .logo:before{
-        width:28px;
-        height:28px;
+        width:34px;
+        height:34px;
     }
 
     nav ul{
