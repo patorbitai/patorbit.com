@@ -1,4 +1,4 @@
-# PAT Orbit Portfolio Website
+# PAT Orbit Website
 
 A static PAT Orbit website for AI agents, intelligent automation, AI-powered software products, and practical product concepts. The repository also includes a browser data preview page, a dedicated Python EDA tool, and an optional FastAPI backend for saving contact/project requests.
 
@@ -9,7 +9,8 @@ A static PAT Orbit website for AI agents, intelligent automation, AI-powered sof
 |-- index.html                  # Home page
 |-- about.html                  # Profile and skills
 |-- services.html               # Service offerings
-|-- portfolio.html              # Featured work
+|-- products.html               # Featured product directions
+|-- products/                   # Product library and concept detail pages
 |-- contact.html                # Contact form and email delivery details
 |-- blog.html                   # Blog overview
 |-- data-analyzer.html          # Browser preview for uploaded datasets
