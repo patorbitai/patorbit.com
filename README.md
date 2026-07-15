@@ -1,6 +1,6 @@
 # PAT Orbit Portfolio Website
 
-A static portfolio website for data engineering, Power BI dashboards, Python automation, SQL reporting, and Azure pipeline case studies. The repository also includes a browser data preview page, a dedicated Python EDA tool, and an optional FastAPI backend for saving contact/project requests.
+A static PAT Orbit website for AI agents, intelligent automation, AI-powered software products, and practical product concepts. The repository also includes a browser data preview page, a dedicated Python EDA tool, and an optional FastAPI backend for saving contact/project requests.
 
 ## Project Structure
 

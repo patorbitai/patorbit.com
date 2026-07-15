@@ -59,7 +59,7 @@ API will be available at `http://localhost:8000`.
 {
   "name": "John Doe",
   "email": "john@example.com",
-  "project_type": "Power BI dashboard",
+  "project_type": "AI agent",
   "message": "Need a sales dashboard",
   "timeline": "2 weeks",
   "budget": "$5000"
