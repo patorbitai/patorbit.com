@@ -1,0 +1,30 @@
+/* ============================================
+   PAT Orbit — Main Stylesheet
+   Redesign 2026
+   ============================================
+   This entry point imports all modular CSS files.
+   Order matters — cascade flows from base to components to pages.
+   ============================================ */
+
+/* === BASE === */
+@import url('base/_variables.css');
+@import url('base/_reset.css');
+@import url('base/_typography.css');
+@import url('base/_base.css');
+@import url('base/_animations.css');
+
+/* === COMPONENTS === */
+@import url('components/_navigation.css');
+@import url('components/_buttons.css');
+@import url('components/_cards.css');
+@import url('components/_footer.css');
+@import url('components/_forms.css');
+
+/* === PAGE-SPECIFIC === */
+@import url('pages/_home.css');
+@import url('pages/_services.css');
+@import url('pages/_about.css');
+@import url('pages/_products.css');
+@import url('pages/_blog.css');
+@import url('pages/_contact.css');
+@import url('pages/_data-analyzer.css');

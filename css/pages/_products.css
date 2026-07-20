@@ -1,0 +1,98 @@
+/* PRODUCTS PAGE
+   ---------------------------
+   Product library, featured items, and product detail.
+*/
+
+.portfolio-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-4);
+  max-width: var(--container-max);
+  margin: 0 auto var(--space-6);
+  padding: 0 var(--container-px);
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-6);
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: var(--section-py) var(--container-px);
+}
+
+/* Product Detail Pages */
+.product-detail {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: var(--space-10) var(--container-px);
+}
+
+.product-detail .section-kicker {
+  font-size: var(--text-xs);
+  color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: var(--weight-medium);
+  display: block;
+  margin-bottom: var(--space-3);
+}
+
+.product-detail h1 {
+  margin-bottom: var(--space-6);
+}
+
+.product-detail p {
+  font-size: var(--text-lg);
+  color: var(--color-text-secondary);
+  line-height: var(--leading-relaxed);
+}
+
+.product-features {
+  list-style: none;
+  margin: var(--space-6) 0;
+}
+
+.product-features li {
+  padding-left: var(--space-6);
+  margin-bottom: var(--space-3);
+  font-size: var(--text-base);
+  color: var(--color-text-secondary);
+}
+
+.product-features li::before {
+  content: "✓";
+  color: var(--color-success);
+  font-weight: var(--weight-bold);
+}
+
+.product-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin: var(--space-6) 0;
+}
+
+.product-tech span {
+  padding: var(--space-1) var(--space-3);
+  background: var(--color-primary-glow);
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  border-radius: var(--radius-full);
+  font-size: var(--text-xs);
+  color: var(--color-primary);
+  font-weight: var(--weight-medium);
+}
+
+@media (max-width: 768px) {
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .product-detail {
+    padding: var(--space-8) var(--container-px);
+  }
+}

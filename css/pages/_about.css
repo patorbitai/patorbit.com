@@ -1,0 +1,151 @@
+/* ABOUT PAGE
+   ---------------------------
+   Profile, capabilities, working style, and focus areas.
+*/
+
+.about-profile {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-10);
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: var(--section-py) var(--container-px);
+  align-items: start;
+}
+
+.about-profile .section-kicker {
+  font-size: var(--text-xs);
+  color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: var(--weight-medium);
+  display: block;
+  margin-bottom: var(--space-4);
+}
+
+.about-profile h2 {
+  margin-bottom: var(--space-4);
+}
+
+.about-profile p {
+  color: var(--color-text-secondary);
+  line-height: var(--leading-relaxed);
+}
+
+.about-card {
+  padding: var(--space-8);
+  border-radius: var(--radius-lg);
+}
+
+.about-card h3 {
+  font-size: var(--text-xl);
+  margin-bottom: var(--space-4);
+  color: var(--color-primary);
+}
+
+.about-card ul {
+  margin: 0;
+}
+
+.about-card ul li {
+  padding-left: var(--space-5);
+  margin-bottom: var(--space-3);
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+}
+
+.about-card ul li::before {
+  content: "⦿";
+}
+
+/* Capabilities */
+.skills-section {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: var(--section-py) var(--container-px);
+}
+
+.about-skill-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-6);
+}
+
+.about-skill-card {
+  padding: var(--space-6);
+}
+
+.about-skill-card h3 {
+  font-size: var(--text-xl);
+  margin-bottom: var(--space-3);
+  color: var(--color-primary);
+}
+
+.about-skill-card p {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  line-height: var(--leading-relaxed);
+  margin: 0;
+}
+
+/* Working Style */
+.process-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-10);
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: var(--section-py) var(--container-px);
+  align-items: center;
+}
+
+.process-section .section-kicker {
+  font-size: var(--text-xs);
+  color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: var(--weight-medium);
+  display: block;
+  margin-bottom: var(--space-4);
+}
+
+.process-section p {
+  color: var(--color-text-secondary);
+  line-height: var(--leading-relaxed);
+}
+
+/* Focus Grid */
+.focus-section {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: var(--section-py) var(--container-px);
+}
+
+.about-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .about-profile,
+  .process-section {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+
+  .about-skill-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-skill-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-card {
+    padding: var(--space-6);
+  }
+}

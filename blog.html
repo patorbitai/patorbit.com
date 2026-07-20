@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Read PAT Orbit notes on AI agents, intelligent automation, AI product ideas, and practical agentic technology.">
-<meta name="theme-color" content="#0f172a">
+<meta name="theme-color" content="#0b1121">
 <meta property="og:type" content="website">
 <meta property="og:title" content="PAT Orbit Notes | AI Agents & Automation">
 <meta property="og:description" content="Read practical notes on AI agents, intelligent automation, AI software products, and agentic technology.">
@@ -14,180 +14,221 @@
 <link rel="canonical" href="https://patorbit.com/blog.html">
 <title>PAT Orbit Notes | AI Agents & Automation</title>
 <link rel="icon" type="image/png" href="images/favicon.png">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/main.css">
 </head>
-
 <body>
 
-<nav aria-label="Primary navigation">
-<a class="logo logo-lockup" href="index.html"><span>PAT Orbit</span><small>Platform for Agentic Technology</small></a>
-
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="services.html">Services</a></li>
-<li><a href="products.html">Products</a></li>
-<li><a href="data-analyzer.html">Analyzer</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="contact.html">Contact</a></li>
-<li><a href="blog.html" aria-current="page">Blog</a></li>
-</ul>
+<!-- Navigation -->
+<nav class="nav" aria-label="Primary navigation">
+  <a class="logo logo-lockup" href="index.html">
+    <span>PAT Orbit</span>
+    <small>Platform for Agentic Technology</small>
+  </a>
+  <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links">
+    <li><a href="index.html" class="nav-link">Home</a></li>
+    <li><a href="services.html" class="nav-link">Services</a></li>
+    <li><a href="products.html" class="nav-link">Products</a></li>
+    <li><a href="about.html" class="nav-link">About</a></li>
+    <li><a href="blog.html" class="nav-link" aria-current="page">Blog</a></li>
+    <li><a href="contact.html" class="nav-link">Contact</a></li>
+  </ul>
 </nav>
 
 <main>
 
+<!-- Page Header -->
 <section class="page-header blog-header">
-<span class="section-kicker">Blog</span>
-<h1>Practical Notes On AI Agents And Automation</h1>
-<p>
-Guides, product ideas, and plain-English breakdowns for AI agents, intelligent automation, and useful software in the agentic world.
-</p>
+  <span class="section-kicker">Blog</span>
+  <h1>Practical Notes On AI Agents And Automation</h1>
+  <p>
+    Guides, product ideas, and plain-English breakdowns for AI agents, intelligent automation, and useful software in the agentic world.
+  </p>
 </section>
 
-<section class="section blog-feature" aria-labelledby="featured-post-title">
-<article class="card featured-post">
-<div>
-<span class="post-category">Featured Guide</span>
-<h2 id="featured-post-title">How To Plan An AI Agent Before Writing Prompts</h2>
-<p>
-A good agent starts before prompts. Define the user, task, inputs, tools, risks, and success criteria first so the build stays focused.
-</p>
-<div class="post-meta">
-<span>AI Agents</span>
-<span>6 min read</span>
-<span>Planning</span>
-</div>
-</div>
-
-<a href="contact.html" class="btn-primary">Discuss An Agent</a>
-</article>
+<!-- Featured Post -->
+<section class="blog-feature" aria-labelledby="featured-post-title">
+  <article class="card featured-post">
+    <div>
+      <span class="post-category" style="font-size:var(--text-xs);color:var(--color-primary);text-transform:uppercase;letter-spacing:0.06em;font-weight:var(--weight-medium);display:block;margin-bottom:var(--space-3);">Featured Guide</span>
+      <h2 id="featured-post-title">How To Plan An AI Agent Before Writing Prompts</h2>
+      <p>
+        A good agent starts before prompts. Define the user, task, inputs, tools, risks, and success criteria first so the build stays focused.
+      </p>
+      <div class="post-meta" style="margin-top:var(--space-4);">
+        <span>AI Agents</span>
+        <span>6 min read</span>
+        <span>Planning</span>
+      </div>
+    </div>
+    <a href="contact.html" class="btn btn-primary">Discuss An Agent</a>
+  </article>
 </section>
 
+<!-- Latest Articles -->
 <section class="section" aria-labelledby="latest-posts-title">
-<span class="section-kicker">Latest Topics</span>
-<h2 id="latest-posts-title">Recent Articles</h2>
+  <span class="section-kicker">Latest Topics</span>
+  <h2 id="latest-posts-title">Recent Articles</h2>
 
-<div class="blog-grid">
-<article class="card blog-card">
-<span class="post-category">Agents</span>
-<h3>Guardrails Every Agent Should Have</h3>
-<p>Simple patterns for boundaries, fallback answers, approvals, and logging before an agent touches real work.</p>
-<div class="post-meta">
-<span>Safety</span>
-<span>Reliability</span>
-</div>
-</article>
+  <div class="blog-grid">
+    <article class="card blog-card">
+      <span class="post-category" style="font-size:var(--text-xs);color:var(--color-primary);text-transform:uppercase;letter-spacing:0.06em;font-weight:var(--weight-medium);display:block;margin-bottom:var(--space-2);">Agents</span>
+      <h3>Guardrails Every Agent Should Have</h3>
+      <p>Simple patterns for boundaries, fallback answers, approvals, and logging before an agent touches real work.</p>
+      <div class="post-meta">
+        <span>Safety</span>
+        <span>Reliability</span>
+      </div>
+    </article>
 
-<article class="card blog-card">
-<span class="post-category">Automation</span>
-<h3>Where AI Automation Helps First</h3>
-<p>Look for repeated inputs, predictable decisions, status updates, document summaries, and routing tasks.</p>
-<div class="post-meta">
-<span>Workflow</span>
-<span>Automation</span>
-</div>
-</article>
+    <article class="card blog-card">
+      <span class="post-category" style="font-size:var(--text-xs);color:var(--color-primary);text-transform:uppercase;letter-spacing:0.06em;font-weight:var(--weight-medium);display:block;margin-bottom:var(--space-2);">Automation</span>
+      <h3>Where AI Automation Helps First</h3>
+      <p>Look for repeated inputs, predictable decisions, status updates, document summaries, and routing tasks.</p>
+      <div class="post-meta">
+        <span>Workflow</span>
+        <span>Automation</span>
+      </div>
+    </article>
 
-<article class="card blog-card">
-<span class="post-category">Products</span>
-<h3>From AI Idea To Product MVP</h3>
-<p>A practical way to think about users, workflows, interface, data capture, feedback, and launch testing.</p>
-<div class="post-meta">
-<span>MVP</span>
-<span>Launch</span>
-</div>
-</article>
+    <article class="card blog-card">
+      <span class="post-category" style="font-size:var(--text-xs);color:var(--color-primary);text-transform:uppercase;letter-spacing:0.06em;font-weight:var(--weight-medium);display:block;margin-bottom:var(--space-2);">Products</span>
+      <h3>From AI Idea To Product MVP</h3>
+      <p>A practical way to think about users, workflows, interface, data capture, feedback, and launch testing.</p>
+      <div class="post-meta">
+        <span>MVP</span>
+        <span>Launch</span>
+      </div>
+    </article>
 
-<article class="card blog-card">
-<span class="post-category">Business</span>
-<h3>Choosing The Right AI Use Case</h3>
-<p>Start with high-frequency, low-risk workflows where a useful assistant can save time quickly.</p>
-<div class="post-meta">
-<span>Strategy</span>
-<span>Use Cases</span>
-</div>
-</article>
-</div>
+    <article class="card blog-card">
+      <span class="post-category" style="font-size:var(--text-xs);color:var(--color-primary);text-transform:uppercase;letter-spacing:0.06em;font-weight:var(--weight-medium);display:block;margin-bottom:var(--space-2);">Business</span>
+      <h3>Choosing The Right AI Use Case</h3>
+      <p>Start with high-frequency, low-risk workflows where a useful assistant can save time quickly.</p>
+      <div class="post-meta">
+        <span>Strategy</span>
+        <span>Use Cases</span>
+      </div>
+    </article>
+  </div>
 </section>
 
-<section class="section split-section" aria-labelledby="blog-topics-title">
-<div>
-<span class="section-kicker">Learning Paths</span>
-<h2 id="blog-topics-title">What The Blog Will Cover</h2>
-<p>
-This blog is designed for learners and business users who want practical explanations instead of abstract theory.
-</p>
-<p>
-Expect tutorials, product notes, workflow ideas, and plain-English breakdowns of the tools used across AI and automation.
-</p>
-</div>
+<!-- Learning Paths -->
+<section class="split-section section-alt" aria-labelledby="blog-topics-title">
+  <div>
+    <span class="section-kicker">Learning Paths</span>
+    <h2 id="blog-topics-title">What The Blog Will Cover</h2>
+    <p>
+      This blog is designed for learners and business users who want practical explanations instead of abstract theory.
+    </p>
+    <p>
+      Expect tutorials, product notes, workflow ideas, and plain-English breakdowns of the tools used across AI and automation.
+    </p>
+  </div>
 
-<div class="topic-list">
-<a class="card topic-card" href="services.html">
-<strong>AI Agent Design</strong>
-<span>Tasks, prompts, tools, memory, and approval flows.</span>
-</a>
-
-<a class="card topic-card" href="services.html">
-<strong>Intelligent Automation</strong>
-<span>Repeated work, routing, summaries, and business actions.</span>
-</a>
-
-<a class="card topic-card" href="services.html">
-<strong>AI Product MVPs</strong>
-<span>Lean interfaces, testing loops, and launch-ready prototypes.</span>
-</a>
-</div>
+  <div class="topic-list">
+    <a class="card topic-card" href="services.html">
+      <strong>AI Agent Design</strong>
+      <span>Tasks, prompts, tools, memory, and approval flows.</span>
+    </a>
+    <a class="card topic-card" href="services.html">
+      <strong>Intelligent Automation</strong>
+      <span>Repeated work, routing, summaries, and business actions.</span>
+    </a>
+    <a class="card topic-card" href="services.html">
+      <strong>AI Product MVPs</strong>
+      <span>Lean interfaces, testing loops, and launch-ready prototypes.</span>
+    </a>
+  </div>
 </section>
 
-<section class="section cta-section" aria-labelledby="blog-cta-title">
-<div class="cta-panel">
-<h2 id="blog-cta-title">Have A Topic You Want Explained?</h2>
-<p>Send a question about AI agents, automation, or product ideas and PAT Orbit may turn it into a future note.</p>
-<a href="contact.html" class="btn-primary">Suggest A Topic</a>
-</div>
+<!-- CTA -->
+<section class="cta-section" aria-labelledby="blog-cta-title">
+  <div class="cta-panel">
+    <h2 id="blog-cta-title">Have A Topic You Want Explained?</h2>
+    <p>Send a question about AI agents, automation, or product ideas and PAT Orbit may turn it into a future note.</p>
+    <a href="contact.html" class="btn btn-cta">Suggest A Topic</a>
+  </div>
 </section>
 
 </main>
 
+<!-- Footer -->
 <footer class="footer">
-<div class="footer-shell footer-simple">
-<div class="footer-main">
-<div class="footer-brand-block">
-<a class="footer-brand" href="index.html">PAT Orbit</a>
-<p class="footer-copy">Platform for Agentic Technology, building AI agents, intelligent automation tools, and AI-powered software products.</p>
-<div class="footer-badges" aria-label="Core specialties">
-<span>AI Agents</span>
-<span>Automation</span>
-<span>Software</span>
-<span>Products</span>
-</div>
-</div>
-
-<div class="footer-contact-panel">
-<div>
-<span class="footer-eyebrow">Project inquiries</span>
-<strong>Ready to discuss your AI workflow?</strong>
-</div>
-<div class="footer-contact-list">
-<a href="mailto:data_with_arvind@gmail.com"><img src="images/icon-email.svg" alt="" aria-hidden="true"><span>Email</span><strong>data_with_arvind@gmail.com</strong></a>
-<a href="https://wa.me/918861333476"><img src="images/icon-whatsapp.svg" alt="" aria-hidden="true"><span>WhatsApp</span><strong>+91 88613 33476</strong></a>
-</div>
-<a class="footer-cta" href="contact.html">Send AI Project Details</a>
-</div>
-</div>
-
-<div class="footer-bottom">
-<p>&copy; 2026 PAT Orbit. PAT Orbit is a technology brand operated by Tulsi Enterprises.</p>
-<div class="footer-social" aria-label="Social links">
-<a href="https://www.linkedin.com/in/data-with-arvind/" target="_blank" rel="noopener"><img src="images/icon-linkedin.svg" alt="" aria-hidden="true">LinkedIn</a>
-<a href="https://github.com/patorbitai" target="_blank" rel="noopener"><img src="images/icon-github.svg" alt="" aria-hidden="true">GitHub</a>
-<a href="mailto:data_with_arvind@gmail.com"><img src="images/icon-email.svg" alt="" aria-hidden="true">Email</a>
-</div>
-</div>
-</div>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="footer-logo" href="index.html">PAT Orbit</a>
+        <p class="footer-description">Platform for Agentic Technology, building AI agents, intelligent automation tools, and AI-powered software products.</p>
+        <div class="footer-badges">
+          <span>AI Agents</span>
+          <span>Automation</span>
+          <span>Software</span>
+          <span>Products</span>
+        </div>
+      </div>
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="products.html">Products</a>
+          <a href="about.html">About</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div class="footer-column">
+        <h4>Services</h4>
+        <div class="footer-links">
+          <a href="services.html">AI Agent Development</a>
+          <a href="services.html">Intelligent Automation</a>
+          <a href="services.html">AI Software Products</a>
+          <a href="services.html">Business Tool Integration</a>
+          <a href="data-analyzer.html">Data Analyzer</a>
+        </div>
+      </div>
+      <div class="footer-column">
+        <h4>Contact</h4>
+        <div class="footer-contact-list">
+          <a href="mailto:data_with_arvind@gmail.com">
+            <img src="images/icon-email.svg" alt="" aria-hidden="true"><span>Email</span><strong>data_with_arvind@gmail.com</strong>
+          </a>
+          <a href="https://wa.me/918861333476">
+            <img src="images/icon-whatsapp.svg" alt="" aria-hidden="true"><span>WhatsApp</span><strong>+91 88613 33476</strong>
+          </a>
+          <a href="https://www.linkedin.com/in/data-with-arvind/" target="_blank" rel="noopener">
+            <img src="images/icon-linkedin.svg" alt="" aria-hidden="true"><span>LinkedIn</span><strong>Connect with PAT Orbit</strong>
+          </a>
+        </div>
+        <a class="footer-cta" href="contact.html">Send AI Project Details</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 PAT Orbit. PAT Orbit is a technology brand operated by Tulsi Enterprises.</p>
+    <div class="footer-social">
+      <a href="https://www.linkedin.com/in/data-with-arvind/" target="_blank" rel="noopener">
+        <img src="images/icon-linkedin.svg" alt="" aria-hidden="true">LinkedIn
+      </a>
+      <a href="https://github.com/patorbitai" target="_blank" rel="noopener">
+        <img src="images/icon-github.svg" alt="" aria-hidden="true">GitHub
+      </a>
+      <a href="mailto:data_with_arvind@gmail.com">
+        <img src="images/icon-email.svg" alt="" aria-hidden="true">Email
+      </a>
+    </div>
+  </div>
 </footer>
 
-<a href="https://wa.me/918861333476" class="whatsapp-btn" aria-label="Chat on WhatsApp"><img src="images/icon-whatsapp.svg" alt="" aria-hidden="true"><span>WhatsApp</span></a>
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/918861333476" class="whatsapp-btn" aria-label="Chat on WhatsApp">
+  <img src="images/icon-whatsapp.svg" alt="" aria-hidden="true">
+  <span>WhatsApp</span>
+</a>
 
+<script src="js/main.js" defer></script>
 </body>
 </html>

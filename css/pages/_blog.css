@@ -1,0 +1,75 @@
+/* BLOG PAGE
+   ---------------------------
+   Blog listing, featured post, article grid, and topic cards.
+*/
+
+.blog-section {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: var(--section-py) var(--container-px);
+}
+
+.blog-feature {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--container-px var(--space-8));
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-6);
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: var(--section-py) var(--container-px);
+}
+
+.blog-grid .section-kicker {
+  font-size: var(--text-xs);
+  color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: var(--weight-medium);
+  display: block;
+  margin-bottom: var(--space-3);
+}
+
+/* Topics Section */
+.topics-section {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: var(--section-py) var(--container-px);
+}
+
+.topic-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.topic-card {
+  padding: var(--space-6);
+  display: block;
+}
+
+.topic-card strong {
+  font-size: var(--text-lg);
+  color: var(--color-text);
+  display: block;
+  margin-bottom: var(--space-2);
+}
+
+.topic-card span {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+}
+
+@media (max-width: 768px) {
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .blog-feature {
+    padding: 0 var(--container-px) var(--space-6);
+  }
+}
